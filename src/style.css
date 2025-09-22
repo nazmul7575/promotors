@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+body {
+	font-family: "Mulish", sans-serif;
+}
+
+@theme {
+	--chakra: "Chakra Petch", sans-serif;
+	--body-color: #ededed;
+	--body-bg: #161616;
+	--primary: #d16527;
+	--secondary: #ededed;
+	--dark: #161616;
+	--gray-dark: #121212;
+	--white: #ffffff;
+	--border-color: #343434;
+	--border-color-translucent: rgba(255, 255, 255, 0.06);
+	--primary-border-subtle: #d16527;
+	--box-shadow: 0 30px 50px 0 rgba(18, 18, 18, 0.5);
+}
+
+/* Define your own container */
+@layer components {
+	.myContainer {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin: 0 auto;
+		@media (min-width: 640px) {
+			max-width: 600px;
+		}
+
+		@media (min-width: 768px) {
+			max-width: 720px;
+		}
+
+		@media (min-width: 1024px) {
+			max-width: 960px;
+		}
+
+		@media (min-width: 1390px) {
+			max-width: 1390px;
+		}
+	}
+}
+
+.right-arrow-clip-path {
+	clip-path: polygon(
+		8px 0,
+		100% 0,
+		100% calc(100% - 8px),
+		calc(100% - 8px) 100%,
+		0 100%,
+		0 8px
+	);
+}
+
+.animate-go-left {
+	animation: scroll 5s linear infinite;
+	transform: skewY(-10deg) scale(1, 0);
+}
+
+#cursor-dot {
+	transition-timing-function: cubic-bezier(0, 1.19, 1, 1);
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(130%);
+	}
+	100% {
+		transform: translateX(-110%);
+	}
+}

@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lobster&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="bg-(--body-bg) text-white tracking-wider">
+  <header class="sticky top-0 z-80 bg-(--body-bg) py-8">
+    <div class="myContainer flex items-center justify-between uppercase font-semibold [font-family:var(--chakra)]">
+      <img src="/src/img/dark-logo.svg" alt="">
+      <ul id="menu" class="flex flex-col lg:flex-row absolute lg:relative justify-center gap-10 -top-1000 lg:top-0">
+        <li class="relative hover:[&_.absolute]:block">
+          <a href="#home"
+            class="relative flex duration-200 hover:text-[var(--primary)] hover:[&_i]:rotate-180 ease-linear leading-[45px]">10+Home
+            <i class="ri-arrow-down-s-line"></i>
+          </a>
+          <div class="p-4 border border-white/5 absolute top-full left-0 hidden min-w-[500px] bg-[#121212]">
+            <ul class="lg:grid lg:grid-cols-2">
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">repair service</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">online service</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">tyres production</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">auto equipment</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">hire expert</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">rims & wheels</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">master service</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">service booking</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">wash service</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-3">paint service</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="relative hover:[&_.absolute]:block">
+          <a href="#service"
+            class="hover:text-(--primary) hover:[&_i]:rotate-180 flex ease-linear duration-200 relative leading-[45px]">Services
+            <i class="ri-arrow-down-s-line"></i>
+          </a>
+          <div class="p-4 border border-white/5 absolute top-full left-0 hidden min-w-[210px] bg-[#121212]">
+            <ul>
+              <li><a href="#" class="hover:bg-white/5 block px-2  py-2">service v.1</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-2 py-2">service v.2</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-2 py-2">service details v.1</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-2 py-2">service details v.2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="relative hover:[&>.absolute]:block">
+          <a href="#shop"
+            class="hover:text-[var(--primary)] hover:[&_i]:rotate-180 flex ease-linear duration-200 relative leading-[45px]">
+            Shop
+            <i class="ri-arrow-down-s-line translate-x-2"></i>
+          </a>
+          <div class="absolute top-full left-0 hidden min-w-[210px] border border-white/5 bg-[#121212]">
+            <ul>
+              <li><a href="#" class="block px-5 py-2 hover:bg-white/5">our shop</a></li>
+              <li><a href="#" class="block px-5 py-2 hover:bg-white/5">shop details</a></li>
+              <li class="relative hover:[&>.absolute]:block">
+                <a href="#" class="flex items-center gap-[3px] px-5 py-1 hover:bg-white/5">
+                  current offers
+                  <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <div class="absolute left-[209px] -top-[17px] hidden min-w-[210px] border border-white/5 bg-[#121212]">
+                  <ul>
+                    <li><a href="#" class="block px-5 py-2 hover:bg-white/5">our deals</a></li>
+                    <li><a href="#" class="block px-5 py-2 hover:bg-white/5">deals details</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="block px-5 py-1 hover:bg-white/5">shopping cart</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="relative hover:[&>.absolute]:block">
+          <a href="#pages"
+            class="flex relative leading-[45px] ease-linear duration-200 hover:text-[var(--primary)] hover:[&_i]:rotate-180">
+            Pages
+            <i class="ri-arrow-down-s-line"></i>
+          </a>
+
+          <div class="absolute top-full left-0 hidden min-w-[210px] border border-white/5 bg-[#121212]">
+            <ul>
+              <li class="relative hover:[&>.absolute]:block">
+                <a href="#" class="flex items-center gap-20 px-5 py-1 hover:bg-white/5">
+                  about <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <div class="absolute left-52 -top-[1px] hidden min-w-[210px] border border-white/5 bg-[#121212] p-4">
+                  <ul>
+                    <li><a href="#" class="block px-5 py-1 hover:bg-white/5">about us</a></li>
+                    <li><a href="#" class="block px-5 py-1 hover:bg-white/5">our portfolio</a></li>
+                    <li><a href="#" class="block px-5 py-1 hover:bg-white/5">our team</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="block px-5 py-2 hover:bg-white/5">pricing</a>
+              </li>
+
+              <li class="relative hover:[&>.absolute]:block">
+                <a href="#" class="flex items-center gap-20 px-5 py-2 hover:bg-white/5">
+                  blogs <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <div class="absolute left-52 -top-1 hidden min-w-[210px] border border-white/5 bg-[#121212] p-4">
+                  <ul>
+                    <li><a href="#" class="block px-5 py-2 hover:bg-white/5">blog grid</a></li>
+                    <li><a href="#" class="block px-5 py-2 hover:bg-white/5">blog standard</a></li>
+                    <li><a href="#" class="block px-5 py-2 hover:bg-white/5">blog details v.1</a></li>
+                    <li><a href="#" class="block px-5 py-2 hover:bg-white/5">blog details v.2</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-2">f.a.q</a></li>
+              <li><a href="#" class="hover:bg-white/5 block px-5 py-2">404 error</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#contact"
+            class="hover:text-[var(--primary)] flex ease-linear duration-200 relative leading-[45px]">Contact</a>
+        </li>
+      </ul>
+      <div class="flex items-center justify-center">
+        <button>
+          <i id="hamburger" class="ri-menu-line cursor-pointer p-2 lg:hidden"></i>
+        </button>
+
+        <div class="flex items-center gap-6 ml-2">
+          <button class="mode-switch relative inline-block transform-3d
+         transition-transform duration-300 ease-in-out hover:
+         hover:bg-white hover:text-black hover:rounded-full">
+            <i class="ri-sun-fill h-15 w-15 cursor-pointer p-2"></i>
+          </button>
+          <a href="" class="relative overflow-hidden">
+            <svg width="177" height="41" viewBox="0 0 177 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M175.5 1.8924V27.2039L161.232 39.8924H1.5V15.2205L15.834 1.8924H175.5Z" stroke="#D16527"
+                stroke-width="2" />
+            </svg>
+            <span class="absolute top-2 -left-0 whitespace-nowrap block animate-[scroll_4s_linear_infinite]
+           ">+8801724-694718
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="myContainer flex flex-col lg:flex-row py-20">
+    <div>
+      <h2 class="[font-family:var(--chakra)] uppercase text-5xl font-bold leading-15">Auto Maintenance & Repair
+        Service
+      </h2>
+      <p class="text-xl py-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla
+        pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+      <button class="relative px-8 py-4 bg-(--primary) text-white font-bold uppercase
+         [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+        <a href="#" class="[font-family:var(--chakra)] uppercase text-xl">get service</a>
+      </button>
+    </div>
+    <div>
+      <img src="/src/img/hero_image_1.png" alt="">
+    </div>
+  </div>
+  <div class="bg-(--gray-dark)">
+    <div class="myContainer grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 py-30">
+      <div>
+        <h2 class="text-6xl [font-family:var(--chakra)] font-bold py-2 border-b border-[#343434]">8K+
+        </h2>
+        <p class="pr-[65px] py-3">Happy Clients dolor purus non enim praesent elementum</p>
+      </div>
+      <div>
+        <h2 class="text-6xl [font-family:var(--chakra)] font-bold py-2 border-b border-[#343434]">22+
+        </h2>
+        <p class="pr-[65px] py-2">Happy Clients dolor purus non enim praesent elementum</p>
+      </div>
+      <div>
+        <h2 class="text-6xl [font-family:var(--chakra)] font-bold py-2 border-b border-[#343434]">500+
+        </h2>
+        <p class="pr-[65px] py-2">Happy Clients dolor purus non enim praesent elementum</p>
+      </div>
+      <div>
+        <h2 class="text-6xl [font-family:var(--chakra)] font-bold py-2 border-b border-[#343434]">99%
+        </h2>
+        <p class="pr-[65px] py-2">Happy Clients dolor purus non enim praesent elementum</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="myContainer py-20">
+      <div class="flex items-center justify-between">
+        <h2 class="text-5xl [font-family:var(--chakra)] uppercase font-bold py-15">Our Services</h2>
+        <div class="hidden text-center lg:block">
+          <button class="relative px-8 py-4 bg-(--primary) text-white font-bold uppercase
+         [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+            <a href="#" class="[font-family:var(--chakra)] uppercase text-xl">all service</a>
+          </button>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="hover:[&_.card]:border-(--primary) ease-in-out">
+          <div class="card border-t border-(--border-color) py-10 transition-all duration-500">
+            <img src="/src/img/1.png" alt=""
+              class="h-15 transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+            <h2 class="text-2xl [font-family:var(--chakra)] uppercase font-bold py-2">brake repair</h2>
+            <p class="text-base leading-5 py-5">Eget velit aliquet sagittis id consectetur. Elit ut aliquam purus
+              sit
+              amet
+              luctus.
+              Odio eu feugiat
+              pretium
+              nibh ipsum consequat nisl vel</p>
+            <button
+              class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+              <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+                <i class="ri-arrow-right-s-line text-lg"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="duration-150 ease-in">details
+                  service</span>
+                <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">details
+                  service</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="hover:[&_.card]:border-(--primary) ease-in-out">
+          <div class="card border-t border-(--border-color) py-10 transition-all duration-500">
+            <img src="/src/img/2.png" alt=""
+              class="h-15 transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+            <h2 class=" text-2xl [font-family:var(--chakra)] uppercase font-bold py-2">engine repair</h2>
+            <p class="text-base leading-5 py-5">Etiam erat velit scelerisque in. Posuere morbi leo urna molestie
+              at elementum eu. Placerat in egestas erat imperdiet sed euismod</p>
+            <button
+              class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+              <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+                <i class="ri-arrow-right-s-line text-lg"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="duration-150 ease-in">details
+                  service</span>
+                <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">details
+                  service</span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="hover:[&_.card]:border-(--primary) ease-in-out">
+          <div class="card border-t border-(--border-color) py-10 transition-all duration-500">
+            <img src="/src/img/3.png" alt=""
+              class="h-15 transition-transform duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+            <h2 class="text-2xl [font-family:var(--chakra)] uppercase font-bold py-2">tire repair</h2>
+            <p class="text-[16px] leading-[22px] py-5">Fermentum posuere urna nec tincidunt praesent. Dignissim enim
+              sit
+              amet venenatis. Lorem ipsum dolor sit amet consectetur</p>
+            <button
+              class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+              <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+                <i class="ri-arrow-right-s-line text-lg"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="duration-150 ease-in">details
+                  service</span>
+                <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">details
+                  service</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="hover:[&_.card]:border-(--primary) ease-in-out">
+          <div class="card border-t border-(--border-color) py-10 transition-all duration-500">
+            <img src="/src/img/4.png" alt=""
+              class="h-15 transition-transform duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+            <h2 class="text-2xl [font-family:var(--chakra)] uppercase font-bold py-2">Cooling System</h2>
+            <p class="text-[16px] leading-[22px] py-8">Duis aute irure dolor in reprehenderit in voluptate velit
+              esse
+              cillum dolore eu fugiat nulla pariatur</p>
+            <button
+              class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+              <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+                <i class="ri-arrow-right-s-line text-lg"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="duration-150 ease-in">details
+                  service</span>
+                <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">details
+                  service</span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="hover:[&_.card]:border-(--primary) ease-in-out">
+          <div class="card border-t border-(--border-color) py-10 transition-all duration-500">
+            <img src="/src/img/5.png" alt=""
+              class="h-15 transition-transform duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+            <h2 class="text-2xl [font-family:var(--chakra)] uppercase font-bold py-2">Battery Repair</h2>
+            <p class="text-[16px] leading-[22px] py-5">At auctor urna nunc id cursus metus. In vitae turpis massa sed.
+              Duis aute irure dolor in reprehenderit in voluptate velit</p>
+            <button
+              class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+              <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+                <i class="ri-arrow-right-s-line text-lg"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="duration-150 ease-in">details
+                  service</span>
+                <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">details
+                  service</span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="hover:[&_.card]:border-(--primary) ease-in-out">
+          <div class="card border-t border-(--border-color) py-10 transition-all duration-500">
+            <img src="/src/img/6.png" alt=""
+              class="h-15 transition-transform duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+            <h2 class="text-2xl [font-family:var(--chakra)] uppercase font-bold py-2">Steering Repair</h2>
+            <p class="text-[16px] leading-[22px] py-5">Fusce id velit ut tortor pretium viverra suspendisse.
+              Ullamcorper
+              malesuada proin libero nunc consequat interdum</p>
+            <button
+              class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+              <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+                <i class="ri-arrow-right-s-line text-lg"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="duration-150 ease-in">details
+                  service</span>
+                <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">details
+                  service</span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="block text-center lg:hidden py-10 w-175">
+          <button class="relative px-8 py-4 bg-(--primary) text-white font-bold uppercase
+         [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+            <a href="#" class="[font-family:var(--chakra)] uppercase text-xl">all service</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- video section -->
+  <section>
+    <div class="myContainer py-10">
+      <h2 class="[font-family:var(--chakra)] text-[38px] font-bold py-5 uppercase">Maintaince & Repairs</h2>
+      <hr class="text-white/20 py-3">
+      <div class="relative inline-block">
+        <img src="/src/img/video_poster_1.jpg" alt="">
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div class="absolute inset-0 flex items-center justify-center cursor-pointer">
+          <div class="bg-(--primary) w-24 h-24 flex items-center justify-center text-white text-4xl 
+                [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+            <i class="ri-play-large-fill hover:scale-[0.70] ease-in duration-300"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!-- card section -->
+    <div class="myContainer py-20 grid lg:grid-cols-3 gap-5">
+      <div class="py-20">
+        <h2 class="[font-family:var(--chakra)] text-[38px] font-bold uppercase">Maintaince & Repairs</h2>
+        <p class="py-3">Nibh mauris cursus mattis molestie a iaculis at erat. Venenatis cras sed felis eget velit
+          aliquet sagittis
+          id consectetur. In est ante in nibh mauris</p>
+        <ul>
+          <li class="flex items-center gap-2.5">
+            <img src="/src/img/icon_square.svg" alt="">
+            <span class="text-[14px] py-2 uppercase">same day service</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <img src="/src/img/icon_square.svg" alt="">
+            <span class="text-[14px] py-2 uppercase">convenient location</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <img src="/src/img/icon_square.svg" alt="">
+            <span class="text-[14px] py-2 uppercase">online appoinment</span>
+          </li>
+        </ul>
+      </div>
+      <!-- card-1 -->
+      <div class="py-3">
+        <div data-tilt class="card relative w-full bg-[#121212] text-white">
+          <div class="bg-[#121212] py-[40px] px-[40px]">
+            <div class="[font-family:var(--chakra)] flex items-baseline-last justify-between uppercase">
+              <h2></h2>
+              <h4 class="text-[#d5d5d5] text-[15px] ml-15 font-semibold">personal</h4>
+              <h3
+                class="text-(--primary) font-bold text-[14px] w-15 py-3.5 px-2.5 bg-(--body-bg) text-centers rounded-full leading-4">
+                save<br>
+                <span class="px-2">$10</span>
+              </h3>
+            </div>
+            <div class="flex items-start justify-center mt-[-60]">
+              <h2 class="[font-family:var(--chakra)] text-[42px] font-bold">$49</h2>
+              <h4 class="line-through mt-6 ml-1 text-[18px] text-[#acacac] font-[500]">$59
+              </h4>
+            </div>
+            <div class="flex items-center justify-center text-[#d5d5d5]">
+              <p class="border-b px-12 border-[#343434] pb-7 text-sm">per month</p>
+            </div>
+            <ul class="py-5">
+              <li class="flex items-center justify-between py-2">
+                <span>Pellentesque eu tincidunt</span>
+                <i class="ri-check-fill"></i>
+              </li>
+              <li class="flex items-center justify-between py-2">
+                <span>Morbi leo urna molestie mattis</span>
+                <i class="ri-check-fill"></i>
+              </li>
+              <li class="flex items-center justify-between py-2">
+                <span>Enim nulla aliquet porttitor lacus</span>
+                <i class="ri-check-fill"></i>
+              </li>
+              <li class="flex items-center justify-between py-2 text-[#717171]">
+                <span>Scelerisque eleifend donec pretium</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="#717171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather
+                feather-x">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </li>
+              <li class="flex items-center justify-between py-2 text-[#717171]">
+                <span>Eget sit amet tellus cars adipiscing</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="#717171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-x">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </li>
+            </ul>
+            <button
+              class="relative w-full px-8 py-4 bg-(--primary)  text-white font-bold uppercase [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+              <a href="#" class="[font-family:var(--chakra)] uppercase text-xl">get started</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card-2 -->
+      <div class="py-3">
+
+        <div class="card relative bg-[#121212] text-white
+              [transform:rotateX(var(--x,0deg))_rotateY(var(--y,0deg))]
+              transition-transform">
+          <div class="relative border-2 border-(--primary) overflow-hidden">
+            <div
+              class="[font-family:var(--chakra)] absolute -top-2 left-1/2 transform -translate-x-1/2 bg-(--primary) text-white px-4 pt-2 pb-1 [clip-path:polygon(0_0,100%_0,100%_calc(100%-6px),calc(100%-6px)_100%,6px_100%,0_calc(100%-6px))]">
+              <span class="uppercase font-semibold text-[12px] tracking-widest">recommended</span>
+            </div>
+            <div class="py-[40px] px-[40px]">
+              <div class="[font-family:var(--chakra)] flex items-baseline-last justify-between uppercase">
+                <h2></h2>
+                <h4 class="text-[#d5d5d5] text-[15px] ml-15 font-semibold">professonal</h4>
+                <h3
+                  class="text-(--primary) font-bold text-[14px] w-15 py-3.5 px-2.5 bg-(--body-bg) text-centers rounded-full leading-4">
+                  save<br>
+                  <span class="px-2">$20</span>
+                </h3>
+              </div>
+              <div class="flex items-start justify-center mt-[-60]">
+                <h2 class="[font-family:var(--chakra)] text-[42px] font-bold">$99</h2>
+                <h4 class="line-through mt-6 ml-1 text-[18px] text-[#acacac] font-[500]">$119
+                </h4>
+              </div>
+              <div class="flex items-center justify-center text-[#d5d5d5]">
+                <p class="border-b px-12 border-[#343434] pb-7 text-sm">per month</p>
+              </div>
+              <ul class="py-5">
+                <li class="flex items-center justify-between py-2">
+                  <span>Pellentesque eu tincidunt</span>
+                  <i class="ri-check-fill"></i>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                  <span>Morbi leo urna molestie mattis</span>
+                  <i class="ri-check-fill"></i>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                  <span>Enim nulla aliquet porttitor lacus</span>
+                  <i class="ri-check-fill"></i>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                  <span>Scelerisque eleifend donec pretium</span>
+                  <i class="ri-check-fill"></i>
+                </li>
+                <li class="flex items-center justify-between py-2 ">
+                  <span>Eget sit amet tellus cars adipiscing</span>
+                  <i class="ri-check-fill"></i>
+                </li>
+              </ul>
+              <button
+                class="relative w-full px-8 py-4 bg-(--primary)  text-white font-bold uppercase [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+                <a href="#" class="[font-family:var(--chakra)] uppercase text-xl">get started</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="block lg:flex">
+      <img src="/src/img/service_img_1.jpg" alt="" class="lg:w-1/2">
+
+      <div class="bg-[#121212] flex flex-col justify-center items-start px-10 pt-5 pb-20 lg:w-1/2 lg:h-auto">
+        <div class="relative">
+          <div
+            class="[font-family:var(--chakra)] text-transparent [-webkit-text-stroke:1px_#333] text-[66px] font-bold leading-[73px] -mb-[48px] uppercase ">
+            Service
+          </div>
+          <h2 class="[font-family:var(--chakra)] text-[38px] font-bold uppercase">car exterior cleaning: basic
+            detailing
+          </h2>
+        </div>
+        <ul class="pb-5">
+          <li class="flex items-center gap-2.5">
+            <img src="/src/img/icon_square.svg" alt="">
+            <span class="text-[14px] py-1 uppercase">same day service</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <img src="/src/img/icon_square.svg" alt="">
+            <span class="text-[14px] py-1 uppercase">online appoinment</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <img src="/src/img/icon_square.svg" alt="">
+            <span class="text-[14px] py-1 uppercase">convenient location</span>
+          </li>
+
+          <li class="flex items-center gap-2.5">
+            <img src="/src/img/icon_square.svg" alt="">
+            <span class="text-[14px] py-1 uppercase">Complimentary Shuttle</span>
+          </li>
+        </ul>
+        <button class="relative px-8 py-4 bg-(--primary) text-white font-bold uppercase
+         [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+          <a href="#" class="[font-family:var(--chakra)] uppercase text-xl">get service</a>
+        </button>
+      </div>
+    </div>
+    <div class="bg-[#121212] block lg:flex lg:flex-row-reverse">
+      <img src="/src/img/service_img_2.jpg" alt="" class="lg:w-1/2">
+      <div
+        class="flex flex-col justify-center items-start px-10 pt-5 pb-20 lg:max-w-[710px] lg:w-1/2 lg:justify-end lg:py-20 lg:px-20">
+        <div class="relative">
+          <div
+            class="[font-family:var(--chakra)] text-transparent [-webkit-text-stroke:1px_#333] text-[66px] font-bold leading-[73px] -mb-[48px] uppercase ">
+            Service
+          </div>
+          <h2 class="[font-family:var(--chakra)] text-[38px] font-bold uppercase">rubbing, waxing, and polishing
+          </h2>
+        </div>
+
+        <p class="pb-6">Gravida quis blandit turpis cursus in hac habitasse platea. Velit sed ullamcorper morbi
+          tincidunt ornare
+          massa eget. Odio morbi quis commodo odio aenean. Ut etiam sit amet nisl purus</p>
+        <button class="relative px-8 py-4 bg-(--primary) text-white font-bold uppercase
+         [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+          <a href="#" class="[font-family:var(--chakra)] uppercase text-xl">get service</a>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="myContainer py-20 px-0 lg:flex lg:items-baseline">
+      <div class="p-4 pr-12">
+        <h2 class="[font-family:var(--chakra)] text-[38px] font-bold py-4 uppercase">How to Service Your Car
+        </h2>
+        <p class="text-[18px] leading-[26px] pb-10">Egestas integer eget aliquet nibh praesent tristique magna.
+          Penatibus
+          magnis
+          dis
+          parturient montes</p>
+      </div>
+      <div class="grid grid-cols-2 gap-10">
+        <div class="border-t border-(--border-color)">
+          <h3 class="[font-family:var(--chakra)] text-[23px] font-bold py-5 uppercase"><span
+              class="text-(--primary) mr-3">01</span>make an
+            appointment
+          </h3>
+          <p>Tempor id eu nisl nunc mi ipsum faucibus. Ac feugiat sed lectus vestibulum. Pellentesue
+            habitant morbi
+            tristique</p>
+        </div>
+        <div class="border-t border-(--border-color)">
+          <h3 class="[font-family:var(--chakra)] text-[23px] font-bold py-5 uppercase"><span
+              class="text-(--primary) mr-3">02</span>select service
+          </h3>
+          <p>Pretium quam vulputate dignissim suspendisse in est ante. Neque tempus quam pellentesque nec nam aliquam
+          </p>
+        </div>
+        <div class="border-t border-(--border-color)">
+          <h3 class="[font-family:var(--chakra)] text-[23px] font-bold py-5 uppercase"><span
+              class="text-(--primary) mr-3">03</span>confirm request
+          </h3>
+          <p>Ullamcorper eget nulla facilisi etiam. Integer eget aliquet nibh magna sit. Placerat
+            vestibulum lectus mauris ultrices</p>
+        </div>
+        <div class="border-t border-(--border-color)">
+          <h3 class="[font-family:var(--chakra)] text-[23px] font-bold py-5 uppercase"><span
+              class="text-(--primary) mr-3">04</span>get your car
+          </h3>
+          <p>Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Tortor pretium viverra suspendisse
+            potenti nullam</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cursor-dot"
+    class="fixed top-0 left-0 size-3 rounded-full bg-(--primary) pointer-events-none z-[999] transition-transform duration-1000 ease-in">
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
