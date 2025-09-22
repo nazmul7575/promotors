@@ -23,8 +23,6 @@ body {
 @layer components {
 	.myContainer {
 		width: 100%;
-		padding-left: 15px;
-		padding-right: 15px;
 		margin: 0 auto;
 		@media (min-width: 640px) {
 			max-width: 600px;

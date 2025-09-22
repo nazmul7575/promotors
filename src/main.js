@@ -21,17 +21,3 @@ window.addEventListener("mousemove", (e) => {
 		}px)`;
 	}
 });
-
-// document.querySelectorAll(".card").forEach((el) => {
-// 	el.onmousemove = (e) => {
-// 		const rect = el.getBoundingClientRect();
-// 		const x = (e.clientX - rect.left - rect.width / 2) / 20;
-// 		const y = (e.clientY - rect.top - rect.height / 2) / 20;
-// 		el.style.setProperty("--x", `${y}deg`);
-// 		el.style.setProperty("--y", `${-x}deg`);
-// 	};
-// 	el.onmouseleave = () => {
-// 		el.style.setProperty("--x", "0deg");
-// 		el.style.setProperty("--y", "0deg");
-// 	};
-// });

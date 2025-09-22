@@ -157,7 +157,11 @@
     </div>
   </header>
   <div class="myContainer flex flex-col lg:flex-row py-20">
-    <div>
+    <div class="relative">
+      <div
+        class="[font-family:var(--chakra)] text-transparent [-webkit-text-stroke:1px_#333] text-[110px] font-bold leading-[73px] -mb-[40px] uppercase ">
+        Promotors
+      </div>
       <h2 class="[font-family:var(--chakra)] uppercase text-5xl font-bold leading-15">Auto Maintenance & Repair
         Service
       </h2>
@@ -401,7 +405,7 @@
       </div>
       <!-- card-1 -->
       <div class="py-3">
-        <div data-tilt class="card relative w-full bg-[#121212] text-white">
+        <div data-tilt class="relative w-full bg-[#121212] text-white">
           <div class="bg-[#121212] py-[40px] px-[40px]">
             <div class="[font-family:var(--chakra)] flex items-baseline-last justify-between uppercase">
               <h2></h2>
@@ -461,10 +465,7 @@
       </div>
       <!-- card-2 -->
       <div class="py-3">
-
-        <div class="card relative bg-[#121212] text-white
-              [transform:rotateX(var(--x,0deg))_rotateY(var(--y,0deg))]
-              transition-transform">
+        <div data-tilt class="relative w-full bg-[#121212] text-white">
           <div class="relative border-2 border-(--primary) overflow-hidden">
             <div
               class="[font-family:var(--chakra)] absolute -top-2 left-1/2 transform -translate-x-1/2 bg-(--primary) text-white px-4 pt-2 pb-1 [clip-path:polygon(0_0,100%_0,100%_calc(100%-6px),calc(100%-6px)_100%,6px_100%,0_calc(100%-6px))]">
@@ -629,6 +630,145 @@
           <p>Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Tortor pretium viverra suspendisse
             potenti nullam</p>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog section -->
+  <section class="myContainer">
+    <div class="mb-10 lg:mb-[70px] relative">
+      <h2 class="[font-family:var(--chakra)] text-[38px] mb-[35px] font-bold uppercase">popular articles</h2>
+
+      <a href="#">
+        <img class="min-h-[400px]" src="/src/img/blog_img_1.jpg" alt="">
+      </a>
+      <div class="absolute bottom-20 left-10">
+        <pre
+          class="[font-family:var(--chakra)] text-[15px] flex items-center text-center font-semibold uppercase tracking-wide cursor-pointer"><span class="border-t-2 border-(--primary) pt-1 hover:text-(--primary) duration-300 transition-colors">car advice</span>,  <span class="pt-1 hover:text-(--primary) duration-300 transition-colors">car repair</span>
+      </pre>
+        <h3
+          class="[font-family:var(--chakra)] text-xl font-bold mt-6 mb-4 hover:text-(--primary) transition-colors cursor-pointer duration-300 uppercase">
+          signs your car battery has to be
+          replaced
+        </h3>
+        <p class="text-sm flex items-center gap-2 mb-[30px]">
+          May 29, 2023
+          <span>
+            <img src="/src/img/icon_square.svg" alt="" class="w-[5px] h-[5px]">
+          </span>
+          <span class="hover:text-(--primary) transition-colors duration-300 cursor-pointer">No Comments</span>
+        </p>
+        <a href="#"
+          class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+          <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+            <i class="ri-arrow-right-s-line text-md"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="duration-150 ease-in">read more</span>
+            <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">read more</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-10 lg:grid-cols-3">
+      <div class="py-5">
+        <div class="relative mb-5">
+          <a href="#">
+            <img class="min-h-[300px]" src="/src/img/blog_img_2.jpg" alt="">
+          </a>
+          <div class="absolute bottom-5 left-5">
+            <pre
+              class="[font-family:var(--chakra)] text-[15px] flex items-center text-center font-semibold uppercase tracking-wide cursor-pointer"><span class="border-t-2 border-(--primary) pt-1 hover:text-(--primary) duration-300 transition-colors">car advice</span>
+          </pre>
+          </div>
+        </div>
+        <h3
+          class="[font-family:var(--chakra)] text-xl lg:text-[23px] font-bold mt-6 mb-4 hover:text-(--primary) transition-colors cursor-pointer duration-300 uppercase">
+          How To Protect The Interior Of Your Car
+        </h3>
+        <p class="text-sm flex items-center gap-2 mb-[30px]">
+          May 29, 2023
+          <span>
+            <img src="/src/img/icon_square.svg" alt="" class="w-[5px] h-[5px]">
+          </span>
+          <span class="hover:text-(--primary) transition-colors duration-300 cursor-pointer">No Comments</span>
+        </p>
+        <a href="#"
+          class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+          <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+            <i class="ri-arrow-right-s-line text-md"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="duration-150 ease-in">read more</span>
+            <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">read more</span>
+          </div>
+        </a>
+      </div>
+      <div class="py-5">
+        <div class="relative mb-5">
+          <a href="#">
+            <img class="min-h-[300px]" src="/src/img/blog_img_3.jpg" alt="">
+          </a>
+          <div class="absolute bottom-5 left-5">
+            <pre
+              class="[font-family:var(--chakra)] text-[15px] flex items-center text-center font-semibold uppercase tracking-wide cursor-pointer"><span class="border-t-2 border-(--primary) pt-1 hover:text-(--primary) duration-300 transition-colors">car advice</span>
+          </pre>
+          </div>
+        </div>
+        <h3
+          class="[font-family:var(--chakra)] text-xl lg:text-[23px] font-bold mt-6 mb-4 hover:text-(--primary) transition-colors cursor-pointer duration-300 uppercase">
+          Is Your Car’s Check Engine Light Flashing?
+        </h3>
+        <p class="text-sm flex items-center gap-2 mb-[30px]">
+          May 29, 2023
+          <span>
+            <img src="/src/img/icon_square.svg" alt="" class="w-[5px] h-[5px]">
+          </span>
+          <span class="hover:text-(--primary) transition-colors duration-300 cursor-pointer">No Comments</span>
+        </p>
+        <a href="#"
+          class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+          <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+            <i class="ri-arrow-right-s-line text-md"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="duration-150 ease-in">read more</span>
+            <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">read more</span>
+          </div>
+        </a>
+      </div>
+      <div class="py-5">
+        <div class="relative mb-5">
+          <a href="#">
+            <img class="min-h-[300px]" src="/src/img/blog_img_4.jpg" alt="">
+          </a>
+          <div class="absolute bottom-5 left-5">
+            <pre
+              class="[font-family:var(--chakra)] text-[15px] flex items-center text-center font-semibold uppercase tracking-wide cursor-pointer"><span class="border-t-2 border-(--primary) pt-1 hover:text-(--primary) duration-300 transition-colors">car advice</span>
+           </pre>
+          </div>
+        </div>
+        <h3
+          class="[font-family:var(--chakra)] text-xl lg:text-[23px] font-bold mt-6 mb-4 hover:text-(--primary) transition-colors cursor-pointer duration-300 uppercase">
+          5 Must-Have Things In Your Car for Safety
+        </h3>
+        <p class="text-sm flex items-center gap-2 mb-[30px]">
+          May 29, 2023
+          <span>
+            <img src="/src/img/icon_square.svg" alt="" class="w-[5px] h-[5px]">
+          </span>
+          <span class="hover:text-(--primary) transition-colors duration-300 cursor-pointer">No Comments</span>
+        </p>
+        <a href="#"
+          class="flex items-center gap-2 [font-family:var(--chakra)] uppercase font-semibold cursor-pointer overflow-hidden relative hover:[&_span]:-translate-y-full">
+          <div class="block bg-(--primary) right-arrow-clip-path px-1 text-white font-bold cursor-pointer">
+            <i class="ri-arrow-right-s-line text-md"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="duration-150 ease-in">read more</span>
+            <span class="absolute top-[calc(100%_-_2px)] duration-150 ease-in">read more</span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
