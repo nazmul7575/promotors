@@ -20,6 +20,10 @@
 </head>
 
 <body class="bg-(--body-bg) text-white tracking-wider">
+  <div class="block right-4 bottom-24 fixed z-[999]">
+    <a href="#"><i class="ri-arrow-up-line w-10 h-12 flex items-end justify-center text-[18px] font-extrabold relative pb-3 bg-(--primary)
+        [clip-path:polygon(50%_0,100%_14px,100%_calc(100%-14px),50%_100%,0_calc(100%-14px),0_14px)]"></i></a>
+  </div>
   <header class="sticky top-0 z-80 bg-(--body-bg) py-8">
     <div class="myContainer flex items-center justify-between uppercase font-semibold [font-family:var(--chakra)]">
       <img src="/src/img/dark-logo.svg" alt="">
@@ -815,7 +819,8 @@
       <div>
         <div class="flex flex-col">
           <label for="input_textarea" class="[font-family:var(--chakra)] uppercase mb-2">Your Message</label>
-          <textarea name="message" id="input_textarea" placeholder="Describe Your Problem"></textarea>
+          <textarea name="message" id="input_textarea" placeholder="Describe Your Problem"
+            class="outline-none"></textarea>
           <span class="border-t border-(--border-color) mt-[6px] mb-15"></span>
         </div>
         <button class="relative px-8 py-4 bg-(--primary) text-white font-bold uppercase
@@ -825,6 +830,130 @@
       </div>
     </form>
   </section>
+
+  <footer>
+    <section class="bg-(--gray-dark)">
+      <div class="myContainer py-25 lg:grid lg:grid-cols-4">
+        <div class="mb-10">
+          <img src="/src/img/dark-logo.svg" alt="">
+          <p class="my-5">Duis aute irure dolor in reprehenderit in voluptate velite esse cillum dolore eu fugiat</p>
+          <div class="flex flex-col">
+            <span class="text-sm mb-1">Support center 24/7</span>
+            <a href="#"
+              class="[font-family:var(--chakra)] text-[21px] font-bold hover:underline hover:text-(--primary) transition-colors duration-300">+880
+              1724
+              6947 18</a>
+          </div>
+        </div>
+        <div class="[font-family:var(--chakra)] uppercase">
+          <h3 class="text-[18px] font-semibold mb-6 lg:mb-10 leading-5">about us</h3>
+          <ul>
+            <li
+              class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+              <img src="/src/img/icon_square.svg" alt="">
+              <a href="#">about us</a>
+            </li>
+            <li
+              class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+              <img src="/src/img/icon_square.svg" alt="">
+              <a href="#">our team</a>
+            </li>
+            <li
+              class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+              <img src="/src/img/icon_square.svg" alt="">
+              <a href="#">our works</a>
+            </li>
+            <li
+              class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+              <img src="/src/img/icon_square.svg" alt="">
+              <a href="#">faq</a>
+            </li>
+          </ul>
+        </div>
+        <div class="[font-family:var(--chakra)] uppercase">
+          <h2 class="text-xl font-semibold mb-4 lg:mb-10">popular services</h2>
+          <div class="grid grid-cols-2 lg:grid-cols-2">
+            <div class="">
+              <ul>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">repair services</a>
+                </li>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">online service</a>
+                </li>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">tyres production</a>
+                </li>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">auto equipments</a>
+                </li>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">hire expert</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">rims & wheels</a>
+                </li>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">master service</a>
+                </li>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">service booking</a>
+                </li>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">wash service</a>
+                </li>
+                <li
+                  class="flex items-center text-[15px] font-medium gap-3 leading-5 mb-4 hover:text-(--primary) transition-colors duration-300 cursor-pointer">
+                  <img src="/src/img/icon_square.svg" alt="">
+                  <a href="#">paint service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="[font-family:var(--chakra)] text-[18px] font-semibold uppercase mb-4 lg:mb-8">subscribe</h3>
+          <label for="input_name" class="[font-family:var(--chakra)] font-bold uppercase mb-2">your
+            Name</label>
+          <input type="text" name="name" id="input_name" placeholder="Enter Your Name" class="outline-none">
+          <span class="border-t border-(--border-color) mt-[6px]"></span>
+          <div class="mt-8">
+            <button
+              class="relative w-full px-8 py-4 bg-(--primary)  text-white font-bold uppercase [clip-path:polygon(22px_0,100%_0,100%_calc(100%-22px),calc(100%-22px)_100%,0_100%,0_22px)]">
+              <a href="#" class="[font-family:var(--chakra)] uppercase text-xl">subscribe</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="flex items-center justify-center my-10">
+      <p><a href="#" class="[font-family:var(--chakra)] hover:text-(--primary) duration-300">Promotors Template</a>
+        &copy;copyright All right reserved 2025
+      </p>
+    </div>
+  </footer>
   <div id="cursor-dot"
     class="fixed top-0 left-0 size-3 rounded-full bg-(--primary) pointer-events-none z-[999] transition-transform duration-1000 ease-in">
   </div>
